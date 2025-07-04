@@ -1,0 +1,19 @@
+*{
+    height: calc(100vh - 76.81px);
+    padding: 0;
+    margin: 0;
+    font-family: PoppinsRegular;
+    background-color: #e9e8e8;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    background-color: var(--dark-blue);
+    color: #fff;
+    width: 13px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 0px;
+}
