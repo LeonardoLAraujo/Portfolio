@@ -16,8 +16,10 @@ export default class LHome extends LitElement{
                 justify-content: center;
                 align-items: center;
                 height: 100%;
-                padding: 5rem 1rem 1rem 1rem;
+                padding: 9rem 1rem 4rem 1rem;
                 gap: 30px;
+                background-color: var(--dark-blue);
+                color: #fff;
             }
 
             .home__image{
@@ -152,7 +154,8 @@ export default class LHome extends LitElement{
                 }
             </style>
             <div class="home">  
-                <div class="home__image"></div>
+                <!-- <div class="home__image"></div> -->
+                 <img class="home__image" src=${ME}> 
                 <div class="home__detail">
                     <div class="detail__title">
                         <h1>Desenvolvedor Web</h1>

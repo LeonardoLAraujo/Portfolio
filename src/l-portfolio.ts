@@ -1,12 +1,16 @@
 import {LitElement, html, css, TemplateResult, CSSResult} from 'lit';
 import { customElement, query } from 'lit/decorators.js';
-import "./components/l-menu";
-import "./components/l-home";
-import "./components/l-curriculum";
-import "./components/l-about";
-import LCurriculum from './components/l-curriculum';
-import LHome from './components/l-home';
-import LAbout from './components/l-about';
+import "./pages/l-menu";
+import "./pages/l-home";
+import "./pages/l-curriculum";
+import "./pages/l-about";
+import "./pages/l-project";
+import "./pages/l-contact";
+import LCurriculum from './pages/l-curriculum';
+import LHome from './pages/l-home';
+import LAbout from './pages/l-about';
+import LProject from './pages/l-project';
+import LContact from './pages/l-contact';
 
 @customElement('l-portfolio')
 export default class LPortfolio extends LitElement{
@@ -24,12 +28,20 @@ export default class LPortfolio extends LitElement{
     @query("l-about")
     lAbout!: LAbout;
 
+    @query("l-project")
+    lProject!: LProject;
+
+    @query("l-contact")
+    lContact!: LContact;
+
     protected override render(): TemplateResult{
         return html`
             <l-menu .referencePortfolio=${this}></l-menu>
             <l-home></l-home>
-            <l-curriculum></l-curriculum>
             <l-about></l-about>
+            <l-project></l-project>
+            <l-curriculum></l-curriculum>
+            <l-contact></l-contact>
         `;
     }
 }

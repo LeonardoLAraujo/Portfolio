@@ -14,6 +14,7 @@ export default class LMenu extends LitElement{
                 flex-direction: column;
                 position: fixed;
                 width: 100%;
+                z-index: 2;
             }
 
             .menu,
@@ -26,7 +27,6 @@ export default class LMenu extends LitElement{
                 justify-content: space-evenly;
                 background-color: var(--light-blue);
                 border-bottom: 2px solid #fff;
-                
             }
 
             h1{
@@ -51,7 +51,7 @@ export default class LMenu extends LitElement{
             .animation{
                 width: 100%;
                 clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
-                height: 153px;
+                height: 179px;
                 position: absolute;
                 top: 77px;
             }
@@ -153,16 +153,20 @@ export default class LMenu extends LitElement{
                     </div>
                     <ul class="menu__links">
                         ${this.generateLinkMenu("Home", () => {this.referencePortfolio.lHome?.scrollIntoView({ behavior: 'smooth' })})}
-                        ${this.generateLinkMenu("Curriculum", () => {this.referencePortfolio.lCurriculum?.scrollIntoView({ behavior: 'smooth' })})}
                         ${this.generateLinkMenu("About Me", () => {this.referencePortfolio.lAbout?.scrollIntoView({ behavior: 'smooth' })})}
+                        ${this.generateLinkMenu("Projects", () => {this.referencePortfolio.lProject?.scrollIntoView({ behavior: 'smooth' })})}
+                        ${this.generateLinkMenu("Curriculum", () => {this.referencePortfolio.lCurriculum?.scrollIntoView({ behavior: 'smooth' })})}
+                        ${this.generateLinkMenu("Contact", () => {this.referencePortfolio.lContact?.scrollIntoView({ behavior: 'smooth' })})}
                     </ul>
                 </nav>
 
                 <div class="animation">
                     <ul class="animation__links">
                         ${this.generateLinkMenu("Home", () => {this.referencePortfolio.lHome?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
-                        ${this.generateLinkMenu("Curriculum",  () => {this.referencePortfolio.lCurriculum?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
                         ${this.generateLinkMenu("About Me", () => {this.referencePortfolio.lAbout?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
+                        ${this.generateLinkMenu("Projects", () => {this.referencePortfolio.lProject?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
+                        ${this.generateLinkMenu("Curriculum",  () => {this.referencePortfolio.lCurriculum?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
+                        ${this.generateLinkMenu("Contact", () => {this.referencePortfolio.lContact?.scrollIntoView({ behavior: 'smooth' }); this.openMenu()})}
                     </ul>
                 </div>
             </div>

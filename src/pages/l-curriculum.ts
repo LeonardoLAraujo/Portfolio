@@ -16,16 +16,20 @@ export default class LCurriculum extends LitElement{
                 justify-content: center;
                 height: 100%;
                 gap: 20px;
-                background-color: var(--dark-blue);
             }
 
             .curriculum h1{
-                color: #fff;
+                color: #000;
                 font-family: PoppinsBold;
             }
 
             .curriculum img{
                 width: 180px;
+                transition: transform 300ms;
+            }
+
+            .curriculum img:hover{
+                transform: scale(1.05);
             }
 
             .curriculum__buttons{
@@ -75,6 +79,7 @@ export default class LCurriculum extends LitElement{
                 gap: 10px;
                 align-items: center;
                 padding: 1rem 2rem 2rem 2rem;
+                z-index: 3;
             }
 
             .modal__close{
@@ -103,6 +108,10 @@ export default class LCurriculum extends LitElement{
             @media (min-width: 1024px){
                 .curriculum{
                     height: calc(100% + 75px);
+                }
+
+                .curriculum h1{
+                    font-size: 50px;
                 }
             }
         `;
