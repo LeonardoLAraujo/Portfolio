@@ -1,7 +1,7 @@
 import {LitElement, html, css, TemplateResult, CSSResult} from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import PDF from "../image/pdf_icon.png";
-import CURRICULUM from "../archives/curriculum.pdf";
+import CURRICULUM from "../archives/curriculum-leonardo-leal.pdf";
 import { IconTypes } from 'ecv-component';
 
 @customElement('l-curriculum')
