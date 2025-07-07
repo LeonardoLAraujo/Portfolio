@@ -71,10 +71,7 @@ export default class LProject extends LitElement{
             }
 
             @media (min-width: 1256px){
-                .project{
-                    height: 100%;
-                }
-               
+
                 .project__cards{
                     margin-top: 4rem;
                 }
