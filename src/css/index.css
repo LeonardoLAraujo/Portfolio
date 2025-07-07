@@ -8,7 +8,7 @@
 }
 
 *::-webkit-scrollbar{
-    background-color: var(--dark-blue);
+    background-color: var(--light-blue);
     color: #fff;
     width: 13px;
 }

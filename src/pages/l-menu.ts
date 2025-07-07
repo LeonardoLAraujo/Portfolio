@@ -113,6 +113,10 @@ export default class LMenu extends LitElement{
                 .menu__links{
                     display: flex;
                 }
+
+                .animation{
+                    display: none;
+                }
             }
 
         `;
