@@ -210,6 +210,8 @@ export default class LModalProject extends LitElement{
         this._isAbout = false;
         this._containerButton[0].setAttribute("actual", "");
         this._containerButton[1].removeAttribute("actual");
+
+        this.playerYoutube.stopVideo();
     }
 
     private alterCurrentButton(e: MouseEvent): void{
